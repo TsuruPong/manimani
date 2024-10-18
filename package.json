@@ -1,0 +1,25 @@
+{
+  "name": "manimani",
+  "version": "1.0.0",
+  "description": "Converts kanji, katakana, and hiragana into romaji.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TsuruPong/manimani.git"
+  },
+  "keywords": [
+    "kuromoji.js"
+  ],
+  "author": "TsuruPong",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TsuruPong/manimani/issues"
+  },
+  "homepage": "https://github.com/TsuruPong/manimani#readme",
+  "dependencies": {
+    "kuromoji": "^0.1.2"
+  }
+}
