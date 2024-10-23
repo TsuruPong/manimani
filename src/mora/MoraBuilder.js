@@ -6,7 +6,7 @@ var MoraNodeBuilder = require("./MoraNodeBuilder");
 var MoraRomanBuilder = require("./MoraRomanBuilder");
 
 /**
- * 
+ * constructor
  */
 function MoraBuilder() {
     this.nodeBuilder = new MoraNodeBuilder();
