@@ -19,11 +19,11 @@ MoraRomanBuilder.prototype.build = function (current, next) {
     if (!kana) {
         romans.push(current.toLocaleLowerCase());
     } else {
-        romans = this.concat(kana.boin, kana.shiins);
+        romans = concat(kana.boin, kana.shiins);
     
         if (kana.origin && kana.kogaki) {
-            var youonOrigin = this.concat(kana.origin.boin, kana.origin.shiins);
-            var youonKogaki = this.concat(kana.kogaki.boin, kana.kogaki.shiins)
+            var youonOrigin = concat(kana.origin.boin, kana.origin.shiins);
+            var youonKogaki = concat(kana.kogaki.boin, kana.kogaki.shiins)
             for (const origin of youonOrigin) {
                 for (const kogaki of youonKogaki) {
                     romans.push(`${origin}${kogaki}`)
@@ -56,7 +56,7 @@ MoraRomanBuilder.prototype.build = function (current, next) {
  * @param {string[]} shiins 
  * @returns 
  */
-MoraRomanBuilder.prototype.concat = function (boin, shiins) {
+function concat(boin, shiins) {
     var rr = [];
     if (shiins.length == 0) {
         rr.push(boin);
