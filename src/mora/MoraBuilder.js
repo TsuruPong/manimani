@@ -1,6 +1,7 @@
 "use strict";
 
 var dic = require("../dict/KanaRomanDictionaries");
+var kanaDic = require("../dict/KanaDictionaries");
 var MoraLattice = require("./MoraLattice");
 var MoraNodeBuilder = require("./MoraNodeBuilder");
 var MoraRomanBuilder = require("./MoraRomanBuilder");
@@ -42,13 +43,13 @@ function splitHiragana(hiragana) {
     var skip = false;
     for (let i = 0; i < splited.length; i++) {
         var current = splited[i];
-        if (dic.kogaki.has(current) && skip) {
+        if ((dic.kogaki.has(current) && kanaDic.XTU != current) && skip) {
             skip = false;
             continue;
         }
         if (i + 1 < splited.length) {
             const next = splited[i + 1];
-            if (dic.kogaki.has(next)) {
+            if ((dic.kogaki.has(current) && kanaDic.XTU != current)) {
                 hiraganas.push(`${current}${next}`);
                 skip = true;
                 continue;
