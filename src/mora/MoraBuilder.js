@@ -40,18 +40,13 @@ MoraBuilder.prototype.build = function(hiragana) {
 function splitHiragana(hiragana) {
     var hiraganas = [];
     var splited = [...hiragana];
-    var skip = false;
     for (let i = 0; i < splited.length; i++) {
         var current = splited[i];
-        if ((dic.kogaki.has(current) && kanaDic.XTU != current) && skip) {
-            skip = false;
-            continue;
-        }
+        if (dic.kogaki.has(current) && kanaDic.XTU != current) continue;
         if (i + 1 < splited.length) {
             const next = splited[i + 1];
-            if ((dic.kogaki.has(current) && kanaDic.XTU != current)) {
+            if (dic.kogaki.has(next) && kanaDic.XTU != next) {
                 hiraganas.push(`${current}${next}`);
-                skip = true;
                 continue;
             }
         }
