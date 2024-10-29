@@ -4,7 +4,7 @@ var MoraRomanBuilder = require("../../src/mora/MoraRomanBuilder");
 var builder = new MoraRomanBuilder();
 
 describe("Roman Builder Test", () => {
-    test("single word", () => {
+    test("hiragana to roman", () => {
         expect(builder.build("あ")).toEqual(["a"]);
         expect(builder.build("い")).toEqual(["i"]);
         expect(builder.build("う")).toEqual(["u"]);
