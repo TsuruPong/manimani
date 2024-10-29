@@ -4,7 +4,7 @@ var MoraBuilder = require("../../src/mora/MoraBuilder");
 var builder = new MoraBuilder();
 
 describe("Mora Builder Test", () => {
-    test("single word", () => {
+    test("hiragana to mora", () => {
         expect(builder.build("あ")).toEqual([
             {
                 from: "あ",
