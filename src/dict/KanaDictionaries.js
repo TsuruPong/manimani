@@ -126,15 +126,21 @@ const KanaDictionaries = {
     CHO: "ちょ",
 
     DYA: "ぢゃ",
-    DYI: "ぢぇ",
+    DYI: "ぢぃ",
     DYU: "ぢゅ",
-    DYE: "ぢょ",
+    DYE: "ぢぇ",
     DYO: "ぢょ",
 
     TSA: "つぁ",
     TSI: "つぃ",
     TSE: "つぇ",
     TSO: "つぉ",
+
+    DHA: "でゃ",
+    DHI: "でぃ",
+    DHU: "でゅ",
+    DHE: "でぇ",
+    DHO: "でょ",
 
     NYA: "にゃ",
     NYI: "にぃ",
