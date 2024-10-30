@@ -136,6 +136,12 @@ const KanaDictionaries = {
     TSE: "つぇ",
     TSO: "つぉ",
 
+    THA: "てゃ",
+    THI: "てぃ",
+    THU: "てゅ",
+    THE: "てぇ",
+    THO: "てょ",
+
     DHA: "でゃ",
     DHI: "でぃ",
     DHU: "でゅ",

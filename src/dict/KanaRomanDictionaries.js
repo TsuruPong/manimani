@@ -194,6 +194,13 @@ const youon = new Map([
     [KanaDictienaries.TSE, { shiins: ['ts'], boin: 'e', origin: gojuon.get(KanaDictienaries.TU), kogaki: kogaki.get(KanaDictienaries.XE) }],
     [KanaDictienaries.TSO, { shiins: ['ts'], boin: 'o', origin: gojuon.get(KanaDictienaries.TU), kogaki: kogaki.get(KanaDictienaries.XO) }],
 
+    // てゃ行
+    [KanaDictienaries.THA, { shiins: ['th'], boin: 'a', origin: gojuon.get(KanaDictienaries.TE), kogaki: kogaki.get(KanaDictienaries.XYA) }],
+    [KanaDictienaries.THI, { shiins: ['th'], boin: 'i', origin: gojuon.get(KanaDictienaries.TE), kogaki: kogaki.get(KanaDictienaries.XI) }],
+    [KanaDictienaries.THU, { shiins: ['th'], boin: 'u', origin: gojuon.get(KanaDictienaries.TE), kogaki: kogaki.get(KanaDictienaries.XYU) }],
+    [KanaDictienaries.THE, { shiins: ['th'], boin: 'e', origin: gojuon.get(KanaDictienaries.TE), kogaki: kogaki.get(KanaDictienaries.XE) }],
+    [KanaDictienaries.THO, { shiins: ['th'], boin: 'o', origin: gojuon.get(KanaDictienaries.TE), kogaki: kogaki.get(KanaDictienaries.XYO) }],
+
     // でゃ行
     [KanaDictienaries.DHA, { shiins: ['dh'], boin: 'a', origin: dakuon.get(KanaDictienaries.DE), kogaki: kogaki.get(KanaDictienaries.XYA) }],
     [KanaDictienaries.DHI, { shiins: ['dh'], boin: 'i', origin: dakuon.get(KanaDictienaries.DE), kogaki: kogaki.get(KanaDictienaries.XI) }],

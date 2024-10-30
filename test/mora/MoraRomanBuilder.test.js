@@ -115,6 +115,11 @@ describe("Roman Builder Test", () => {
         expect(builder.build("つぃ")).toEqual(expect.arrayContaining(["tsi", "tuxi", "tuli"]));
         expect(builder.build("つぇ")).toEqual(expect.arrayContaining(["tse", "tuxe", "tule"]));
         expect(builder.build("つぉ")).toEqual(expect.arrayContaining(["tso", "tuxo", "tulo"]));
+        expect(builder.build("てゃ")).toEqual(expect.arrayContaining(["tha", "texya", "telya"]));
+        expect(builder.build("てぃ")).toEqual(expect.arrayContaining(["thi", "texi", "teli"]));
+        expect(builder.build("てゅ")).toEqual(expect.arrayContaining(["thu", "texyu", "telyu"]));
+        expect(builder.build("てぇ")).toEqual(expect.arrayContaining(["the", "texe", "tele"]));
+        expect(builder.build("てょ")).toEqual(expect.arrayContaining(["tho", "texyo", "telyo"]));
         expect(builder.build("でゃ")).toEqual(expect.arrayContaining(["dha", "dexya", "delya"]));
         expect(builder.build("でぃ")).toEqual(expect.arrayContaining(["dhi", "dexi", "deli"]));
         expect(builder.build("でゅ")).toEqual(expect.arrayContaining(["dhu", "dexyu", "delyu"]));
