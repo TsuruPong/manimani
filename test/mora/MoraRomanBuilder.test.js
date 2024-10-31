@@ -102,11 +102,11 @@ describe("Roman Builder Test", () => {
         expect(builder.build("じゅ")).toEqual(expect.arrayContaining(["ju", "jilyu", "jixyu"]));
         expect(builder.build("じぇ")).toEqual(expect.arrayContaining(["je", "jile", "jixe"]));
         expect(builder.build("じょ")).toEqual(expect.arrayContaining(["jo", "jilyo", "jixyo"]));
-        expect(builder.build("ちゃ")).toEqual(expect.arrayContaining(["cha", "cya", "tya", "chya", "tilya", "tixya", "chixya", "chilya"]));
-        expect(builder.build("ちぃ")).toEqual(expect.arrayContaining(["tyi", "cyi", "chyi", "tili", "tixi"]));
-        expect(builder.build("ちゅ")).toEqual(expect.arrayContaining(["chu", "cyu", "tyu", "chyu", "tilyu", "tixyu"]));
-        expect(builder.build("ちぇ")).toEqual(expect.arrayContaining(["che", "cye", "tye", "chye", "tile", "tixe"]));
-        expect(builder.build("ちょ")).toEqual(expect.arrayContaining(["cho", "cyo", "tyo", "chyo", "tilyo", "tixyo"]));
+        expect(builder.build("ちゃ")).toEqual(expect.arrayContaining(["cha", "cya", "tya", "tilya", "tixya", "chixya", "chilya"]));
+        expect(builder.build("ちぃ")).toEqual(expect.arrayContaining(["tyi", "cyi", "tili", "tixi"]));
+        expect(builder.build("ちゅ")).toEqual(expect.arrayContaining(["chu", "cyu", "tyu", "tilyu", "tixyu"]));
+        expect(builder.build("ちぇ")).toEqual(expect.arrayContaining(["che", "cye", "tye", "tile", "tixe"]));
+        expect(builder.build("ちょ")).toEqual(expect.arrayContaining(["cho", "cyo", "tyo", "tilyo", "tixyo"]));
         expect(builder.build("ぢぃ")).toEqual(expect.arrayContaining(["dyi", "dili", "dixi"]));
         expect(builder.build("ぢゅ")).toEqual(expect.arrayContaining(["dyu", "dilyu", "dixyu"]));
         expect(builder.build("ぢぇ")).toEqual(expect.arrayContaining(["dye", "dile", "dixe"]));
