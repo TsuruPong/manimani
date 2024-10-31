@@ -1,0 +1,12 @@
+{
+	"manimani mora node": {
+		"prefix": ["moranode", "mmn"],
+		"body": [
+			"{",
+			"    pos: $1,",
+			"    val: \"$2\",",
+			"    children: [$3]",
+			"}",
+		]
+	}
+}
