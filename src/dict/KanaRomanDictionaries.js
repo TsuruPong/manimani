@@ -39,7 +39,7 @@ const gojuon = new Map([
     // は行
     [KanaDictienaries.HA, { shiins: ['h'], boin: 'a' }],
     [KanaDictienaries.HI, { shiins: ['h'], boin: 'i' }],
-    [KanaDictienaries.HU, { shiins: ['h'], boin: 'u' }],
+    [KanaDictienaries.HU, { shiins: ['h', 'f'], boin: 'u' }],
     [KanaDictienaries.HE, { shiins: ['h'], boin: 'e' }],
     [KanaDictienaries.HO, { shiins: ['h'], boin: 'o' }],
     
@@ -176,7 +176,7 @@ const youon = new Map([
 
     // ちゃ行
     [KanaDictienaries.CHA, { shiins: ['ch', 'cy','ty'], boin: 'a', origin: gojuon.get(KanaDictienaries.TI), kogaki: kogaki.get(KanaDictienaries.XYA) }],
-    [KanaDictienaries.CYI, { shiins: ['ch', 'cy','ty'], boin: 'i', origin: gojuon.get(KanaDictienaries.TI), kogaki: kogaki.get(KanaDictienaries.XI) }],
+    [KanaDictienaries.CYI, { shiins: ['cy','ty'], boin: 'i', origin: gojuon.get(KanaDictienaries.TI), kogaki: kogaki.get(KanaDictienaries.XI) }],
     [KanaDictienaries.CHU, { shiins: ['ch', 'cy','ty'], boin: 'u', origin: gojuon.get(KanaDictienaries.TI), kogaki: kogaki.get(KanaDictienaries.XYU) }],
     [KanaDictienaries.CHE, { shiins: ['ch', 'cy','ty'], boin: 'e', origin: gojuon.get(KanaDictienaries.TI), kogaki: kogaki.get(KanaDictienaries.XE) }],
     [KanaDictienaries.CHO, { shiins: ['ch', 'cy','ty'], boin: 'o', origin: gojuon.get(KanaDictienaries.TI), kogaki: kogaki.get(KanaDictienaries.XYO) }],
