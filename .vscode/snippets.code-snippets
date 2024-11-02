@@ -1,5 +1,5 @@
 {
-	"manimani mora node": {
+	"manimani mora node snip": {
 		"prefix": ["moranode", "mmn"],
 		"body": [
 			"{",
@@ -7,6 +7,14 @@
 			"    val: \"$2\",",
 			"    children: [$3]",
 			"}",
+		]
+	},
+	"manimani mora node builder test snip": {
+		"prefix": ["moranodebuildertest", "mnbt"],
+		"body": [
+			"expect(mnb.build(mrb.build(\"$1\"))).toEqual([",
+			"$2",
+			"]);"
 		]
 	}
 }
