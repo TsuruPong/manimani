@@ -12,7 +12,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build("お")).toEqual(["o"]);
         expect(builder.build("か")).toEqual(["ka", "ca"]);
         expect(builder.build("き")).toEqual(["ki"]);
-        expect(builder.build("く")).toEqual(["ku", "cu"]);
+        expect(builder.build("く")).toEqual(["ku", "cu", "qu"]);
         expect(builder.build("け")).toEqual(["ke"]);
         expect(builder.build("こ")).toEqual(["ko", "co"]);
         expect(builder.build("さ")).toEqual(["sa"]);
@@ -89,10 +89,10 @@ describe("Roman Builder Test", () => {
         expect(builder.build("ぎゅ")).toEqual(["gyu", "gixyu", "gilyu"]);
         expect(builder.build("ぎぇ")).toEqual(["gye", "gixe", "gile"]);
         expect(builder.build("ぎょ")).toEqual(["gyo", "gixyo", "gilyo"]);
-        expect(builder.build("くぁ")).toEqual(["qa", "kwa", "kuxa", "kula", "cuxa", "cula"]);
-        expect(builder.build("くぃ")).toEqual(["qi", "kwi", "kuxi", "kuli", "cuxi", "culi"]);
-        expect(builder.build("くぇ")).toEqual(["qe", "kwe", "kuxe", "kule", "cuxe", "cule"]);
-        expect(builder.build("くぉ")).toEqual(["qo", "kwo", "kuxo", "kulo", "cuxo", "culo"]);
+        expect(builder.build("くぁ")).toEqual(["qa", "kwa", "kuxa", "kula", "cuxa", "cula", "quxa", "qula"]);
+        expect(builder.build("くぃ")).toEqual(["qi", "kwi", "kuxi", "kuli", "cuxi", "culi", "quxi", "quli"]);
+        expect(builder.build("くぇ")).toEqual(["qe", "kwe", "kuxe", "kule", "cuxe", "cule", "quxe", "qule"]);
+        expect(builder.build("くぉ")).toEqual(["qo", "kwo", "kuxo", "kulo", "cuxo", "culo", "quxo", "qulo"]);
         expect(builder.build("しゃ")).toEqual(["sha", "sya", "sixya", "silya", "shixya", "shilya", "cixya", "cilya"]);
         expect(builder.build("しぃ")).toEqual(["syi", "sixi", "sili", "shixi", "shili",  "cixi", "cili"]);
         expect(builder.build("しゅ")).toEqual(["shu", "syu", "sixyu", "silyu", "shixyu", "shilyu", "cixyu", "cilyu"]);

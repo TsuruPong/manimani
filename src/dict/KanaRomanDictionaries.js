@@ -11,7 +11,7 @@ const gojuon = new Map([
     // か行
     [KanaDictienaries.KA, { shiins: ['k', 'c'], boin: 'a' }],
     [KanaDictienaries.KI, { shiins: ['k'], boin: 'i' }],
-    [KanaDictienaries.KU, { shiins: ['k', 'c'], boin: 'u' }],
+    [KanaDictienaries.KU, { shiins: ['k', 'c', 'q'], boin: 'u' }],
     [KanaDictienaries.KE, { shiins: ['k'], boin: 'e' }],
     [KanaDictienaries.KO, { shiins: ['k', 'c'], boin: 'o' }],
     
