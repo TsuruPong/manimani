@@ -6,8 +6,8 @@ var builder = new MoraRomanBuilder();
 describe("Roman Builder Test", () => {
     test("hiragana to roman", () => {
         expect(builder.build("あ")).toEqual(["a"]);
-        expect(builder.build("い")).toEqual(["i"]);
-        expect(builder.build("う")).toEqual(["u"]);
+        expect(builder.build("い")).toEqual(["yi", "i"]);
+        expect(builder.build("う")).toEqual(["wu", "whu", "u"]);
         expect(builder.build("え")).toEqual(["e"]);
         expect(builder.build("お")).toEqual(["o"]);
         expect(builder.build("か")).toEqual(["ka", "ca"]);
@@ -76,9 +76,9 @@ describe("Roman Builder Test", () => {
         expect(builder.build("ぷ")).toEqual(["pu"]);
         expect(builder.build("ぺ")).toEqual(["pe"]);
         expect(builder.build("ぽ")).toEqual(["po"]);
-        expect(builder.build("いぇ")).toEqual(["ye", "ixe", "ile"]);
-        expect(builder.build("うぃ")).toEqual(["wi", "uxi", "uli"]);
-        expect(builder.build("うぇ")).toEqual(["we", "uxe", "ule"]);
+        expect(builder.build("いぇ")).toEqual(["ye", "yixe", "yile", "ixe", "ile"]);
+        expect(builder.build("うぃ")).toEqual(["wi", "wuxi", "wuli", "whuxi", "whuli", "uxi", "uli"]);
+        expect(builder.build("うぇ")).toEqual(["we", "wuxe", "wule", "whuxe", "whule","uxe", "ule"]);
         expect(builder.build("きゃ")).toEqual(["kya", "kixya", "kilya"]);
         expect(builder.build("きぃ")).toEqual(["kyi", "kixi", "kili"]);
         expect(builder.build("きゅ")).toEqual(["kyu", "kixyu", "kilyu"]);

@@ -4,7 +4,8 @@ var KanaDictionaries = require("../dict/KanaDictionaries");
 var dic = require("../dict/KanaRomanDictionaries");
 
 function MoraRomanBuilder() {
-    this.NArows = [KanaDictionaries.NA, KanaDictionaries.NI, KanaDictionaries.NU, KanaDictionaries.NE, KanaDictionaries.NO]
+    this.Arows = [KanaDictionaries.A, KanaDictionaries.I, KanaDictionaries.U, KanaDictionaries.E, KanaDictionaries.O];
+    this.NArows = [KanaDictionaries.NA, KanaDictionaries.NI, KanaDictionaries.NU, KanaDictionaries.NE, KanaDictionaries.NO];
 }
 
 /**
@@ -19,11 +20,11 @@ MoraRomanBuilder.prototype.build = function (current, next) {
     if (!kana) {
         romans.push(current.toLocaleLowerCase());
     } else {
-        romans = concat(kana.boin, kana.shiins);
+        romans = concat(kana.from, kana.boin, kana.shiins);
     
         if (kana.origin && kana.kogaki) {
-            var youonOrigin = concat(kana.origin.boin, kana.origin.shiins);
-            var youonKogaki = concat(kana.kogaki.boin, kana.kogaki.shiins)
+            var youonOrigin = concat(kana.origin.from, kana.origin.boin, kana.origin.shiins);
+            var youonKogaki = concat(kana.kogaki.from, kana.kogaki.boin, kana.kogaki.shiins)
             for (const origin of youonOrigin) {
                 for (const kogaki of youonKogaki) {
                     romans.push(`${origin}${kogaki}`)
@@ -51,17 +52,18 @@ MoraRomanBuilder.prototype.build = function (current, next) {
 
 /**
  * Concatenates boin and shiins to generate Romanized representations.
- * @param {string[]} romans 
+ * @param {string[]} 
+ * @param {string} kana
  * @param {string} boin 
  * @param {string[]} shiins 
  * @returns 
  */
-function concat(boin, shiins) {
+function concat(kana, boin, shiins) {
+    var arows = [KanaDictionaries.A, KanaDictionaries.I, KanaDictionaries.U, KanaDictionaries.E, KanaDictionaries.O];
     var rr = [];
-    if (shiins.length == 0) {
+    shiins.map(shiin => rr.push(`${shiin}${boin}`));
+    if (arows.includes(kana)) {
         rr.push(boin);
-    } else{ 
-        shiins.map(shiin => rr.push(`${shiin}${boin}`));
     }
     return rr;
 }
