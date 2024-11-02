@@ -13,7 +13,7 @@
 		"prefix": ["moranodebuildertest", "mnbt"],
 		"body": [
 			"expect(mnb.build(mrb.build(\"$1\"))).toEqual([",
-			"$2",
+			"    $2",
 			"]);"
 		]
 	}
