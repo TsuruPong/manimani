@@ -34,15 +34,20 @@ MoraRomanBuilder.prototype.build = function (current, next) {
     
         if (next) {
             if (KanaDictionaries.N == current) {
-                if (!this.NArows.includes(next)) {
+                if (!this.Arows.includes(next) && !this.NArows.includes(next)) {
                     romans.push(kana.boin);
                 }
             }
     
             if (KanaDictionaries.XTU == current) {
                 var nextKana = dic.KanaRomanDictionaries.get(next);
-                var shiins = nextKana.origin ? nextKana.origin.shiins.map(v => v.slice(0, 1)) : nextKana.shiins;
-                romans = [...romans, ...shiins];
+                var shiins = nextKana.origin ? nextKana.origin.shiins : nextKana.shiins;
+                var sliced = shiins.map(s => s.slice(0, 1));
+                for (const s of sliced) {
+                    if (!romans.includes(s)) {
+                        romans.push(s);
+                    }
+                }
             }
         }
     }
