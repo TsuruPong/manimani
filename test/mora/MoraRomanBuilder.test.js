@@ -108,6 +108,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build("ちゅ")).toEqual(["chu", "cyu", "tyu", "tixyu", "tilyu", "chixyu", "chilyu"]);
         expect(builder.build("ちぇ")).toEqual(["che", "cye", "tye", "tixe", "tile", "chixe", "chile"]);
         expect(builder.build("ちょ")).toEqual(["cho", "cyo", "tyo", "tixyo", "tilyo", "chixyo", "chilyo"]);
+        expect(builder.build("ぢゃ")).toEqual(["dya", "dixya", "dilya"]);
         expect(builder.build("ぢぃ")).toEqual(["dyi", "dixi", "dili"]);
         expect(builder.build("ぢゅ")).toEqual(["dyu", "dixyu", "dilyu"]);
         expect(builder.build("ぢぇ")).toEqual(["dye", "dixe", "dile"]);
