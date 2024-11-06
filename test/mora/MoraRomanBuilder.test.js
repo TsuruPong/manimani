@@ -149,7 +149,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build("ぴょ")).toEqual(["pyo", "pixyo", "pilyo"]);
         expect(builder.build("ふぁ")).toEqual(["fa", "fwa", "huxa", "hula", "fuxa", "fula"]);
         expect(builder.build("ふぃ")).toEqual(["fi", "fyi", "fwi", "huxi", "huli", "fuxi", "fuli"]);
-        expect(builder.build("ふぇ")).toEqual(["fe", "fye","fwe", "huxe", "hule", "fuxe", "fule"]);
+        expect(builder.build("ふぇ")).toEqual(["fe", "fye", "fwe", "huxe", "hule", "fuxe", "fule"]);
         expect(builder.build("ふぉ")).toEqual(["fo", "fwo", "huxo", "hulo", "fuxo", "fulo"]);
         expect(builder.build("ふゃ")).toEqual(["fya", "huxya", "hulya", "fuxya", "fulya"]);
         expect(builder.build("ふゅ")).toEqual(["fyu", "huxyu", "hulyu", "fuxyu", "fulyu"]);
