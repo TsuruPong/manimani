@@ -34,7 +34,7 @@ MoraRomanBuilder.prototype.build = function (current, next) {
     
         if (next) {
             if (KanaDictionaries.N == current) {
-                if (!this.Arows.includes(next) && !this.NArows.includes(next)) {
+                if (!this.Arows.includes(next) && !this.NArows.includes(next) && next != KanaDictionaries.N) {
                     romans.push(kana.boin);
                 }
             }

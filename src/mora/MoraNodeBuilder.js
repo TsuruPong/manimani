@@ -20,6 +20,11 @@ MoraNodeBuilder.prototype.build = function (romans) {
         const chars = [...r];
         let prev;
         for (const c of chars) {
+            if (chars.length == 1 && c == "n") {
+                const n = new MoraNode(num, c);
+                nodes.push(n);
+                continue;
+            }
             if (!prev){
                 const root = nodes.find(n => n.val == c);
                 if (root) {

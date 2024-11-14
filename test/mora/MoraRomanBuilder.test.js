@@ -1,8 +1,6 @@
 "use strict";
-
 var MoraRomanBuilder = require("../../src/mora/MoraRomanBuilder");
 var builder = new MoraRomanBuilder();
-
 describe("Roman Builder Test", () => {
     test("hiragana to roman", () => {
         expect(builder.build("あ")).toEqual(["a"]);
@@ -180,7 +178,6 @@ describe("Roman Builder Test", () => {
         expect(builder.build("っ")).toEqual(["xtu", "ltu", "xtsu", "ltsu"]);
         expect(builder.build("ゎ")).toEqual(["xwa", "lwa"]);
     })
-
     test("nn after", () => {
         expect(builder.build("ん", "あ")).toEqual(["nn", "xn"]);
         expect(builder.build("ん", "い")).toEqual(["nn", "xn"]);
@@ -227,7 +224,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build("ん", "ろ")).toEqual(["nn", "xn", "n"]);
         expect(builder.build("ん", "わ")).toEqual(["nn", "xn", "n"]);
         expect(builder.build("ん", "を")).toEqual(["nn", "xn", "n"]);
-        expect(builder.build("ん", "ん")).toEqual(["nn", "xn", "n"]);
+        expect(builder.build("ん", "ん")).toEqual(["nn", "xn"]);
         expect(builder.build("ん", "が")).toEqual(["nn", "xn", "n"]);
         expect(builder.build("ん", "ぎ")).toEqual(["nn", "xn", "n"]);
         expect(builder.build("ん", "ぐ")).toEqual(["nn", "xn", "n"]);
@@ -356,7 +353,6 @@ describe("Roman Builder Test", () => {
         expect(builder.build("ん", "っ")).toEqual(["nn", "xn", "n"]);
         expect(builder.build("ん", "ゎ")).toEqual(["nn", "xn", "n"]);
     });
-
     test("xtu after", () => {
         expect(builder.build("っ", "あ")).toEqual(["xtu", "ltu", "xtsu", "ltsu"]);
         expect(builder.build("っ", "い")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "y"]);
