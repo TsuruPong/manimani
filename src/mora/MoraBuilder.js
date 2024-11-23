@@ -41,16 +41,19 @@ function splitHiragana(hiragana) {
     var hiraganas = [];
     var splited = [...hiragana];
     for (let i = 0; i < splited.length; i++) {
+        var prev = splited[i - 1];
         var current = splited[i];
-        if (dic.kogaki.has(current) && kanaDic.XTU != current) continue;
-        if (i + 1 < splited.length) {
-            const next = splited[i + 1];
-            if (dic.kogaki.has(next) && kanaDic.XTU != next) {
+        var next = splited[i + 1];
+        if (dic.kogaki.has(current)) {
+            if (prev && !dic.kogaki.has(prev)) continue;
+            hiraganas.push(current);
+        } else {
+            if (next && dic.kogaki.has(next) && kanaDic.XTU != next) {
                 hiraganas.push(`${current}${next}`);
-                continue;
+            } else {
+                hiraganas.push(current)
             }
         }
-        hiraganas.push(current);
     }
     return hiraganas;
 }
