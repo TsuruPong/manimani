@@ -3,7 +3,7 @@
   "author": "TsuruPong",
   "license": "Apache-2.0",
   "description": "Converts kanji, katakana, and hiragana into romaji.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/manimani.js",
   "scripts": {
     "test": "jest"
