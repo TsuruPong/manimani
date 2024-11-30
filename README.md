@@ -1,6 +1,6 @@
 # manimani
 
-日本語をローマ字に変換します。
+Converts Japanese to romaji.
 
 # Installation
 ```
