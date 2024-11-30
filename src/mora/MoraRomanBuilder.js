@@ -18,7 +18,7 @@ MoraRomanBuilder.prototype.build = function (current, next) {
     var kana = dic.KanaRomanDictionaries.get(current);
 
     if (!kana) {
-        romans.push(current.toLocaleLowerCase());
+        romans.push(toLowerCase(current));
     } else {
         romans = concat(kana.from, kana.boin, kana.shiins);
     
@@ -71,6 +71,27 @@ function concat(kana, boin, shiins) {
         rr.push(boin);
     }
     return rr;
+}
+
+/**
+ * Converts the specified string from full-width to half-width characters.
+ * It also converts specific Japanese punctuation marks to their corresponding symbols.
+ * 
+ * @param {string} symbol - The string to be converted.
+ * @returns {string} - The converted string.
+ */
+function toLowerCase(symbol) {
+    if (symbol == "　") return " ";
+    if (symbol == "、") return ",";
+    if (symbol == "。") return ".";
+    if (symbol == "「") return "\"";
+    if (symbol == "」") return "\"";
+    return symbol.replace(/[\u3000-\uFF5E]/g, (s) => {
+        var code  = s.charCodeAt(0);
+        return code >= 0xFF01 && code <= 0xFF5E
+            ? String.fromCharCode(code - 0xFEE0)
+            : char;
+    })
 }
 
 module.exports = MoraRomanBuilder;
