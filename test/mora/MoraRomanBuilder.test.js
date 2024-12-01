@@ -631,7 +631,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build(" ")).toEqual([" "]);
     });
 
-    test("full width roman", () => {
+    test("roman", () => {
         expect(builder.build("ａ")).toEqual(["a"]);
         expect(builder.build("ｂ")).toEqual(["b"]);
         expect(builder.build("ｃ")).toEqual(["c"]);
