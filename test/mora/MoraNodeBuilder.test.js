@@ -12646,7 +12646,1534 @@ describe("Node Builder Test", () => {
                 children: []
             }
         ]);
-
-        
     });
-})
+
+    test("number", () => {
+        expect(mnb.build(mrb.build("１"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("２"))).toEqual([
+            {
+                pos: 0,
+                val: "2",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("３"))).toEqual([
+            {
+                pos: 0,
+                val: "3",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("４"))).toEqual([
+            {
+                pos: 0,
+                val: "4",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("５"))).toEqual([
+            {
+                pos: 0,
+                val: "5",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("６"))).toEqual([
+            {
+                pos: 0,
+                val: "6",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("７"))).toEqual([
+            {
+                pos: 0,
+                val: "7",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("８"))).toEqual([
+            {
+                pos: 0,
+                val: "8",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("９"))).toEqual([
+            {
+                pos: 0,
+                val: "9",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("１０"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: []
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("１００"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "0",
+                                children: []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("１０００"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "0",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "0",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("１００００"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "0",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "0",
+                                        children: [
+                                            {
+                                                pos: 4,
+                                                val: "0",
+                                                children: []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("1"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("2"))).toEqual([
+            {
+                pos: 0,
+                val: "2",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("3"))).toEqual([
+            {
+                pos: 0,
+                val: "3",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("4"))).toEqual([
+            {
+                pos: 0,
+                val: "4",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("5"))).toEqual([
+            {
+                pos: 0,
+                val: "5",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("6"))).toEqual([
+            {
+                pos: 0,
+                val: "6",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("7"))).toEqual([
+            {
+                pos: 0,
+                val: "7",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("8"))).toEqual([
+            {
+                pos: 0,
+                val: "8",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("9"))).toEqual([
+            {
+                pos: 0,
+                val: "9",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("10"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: []
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("100"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "0",
+                                children: []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("1000"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "0",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "0",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("10000"))).toEqual([
+            {
+                pos: 0,
+                val: "1",
+                children: [
+                    {
+                        pos: 1,
+                        val: "0",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "0",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "0",
+                                        children: [
+                                            {
+                                                pos: 4,
+                                                val: "0",
+                                                children: []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+    });
+
+    test("symbol", () => {
+        expect(mnb.build(mrb.build("！"))).toEqual([
+            {
+                pos: 0,
+                val: "!",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＂"))).toEqual([
+            {
+                pos: 0,
+                val: "\"",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＃"))).toEqual([
+            {
+                pos: 0,
+                val: "#",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＄"))).toEqual([
+            {
+                pos: 0,
+                val: "$",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("％"))).toEqual([
+            {
+                pos: 0,
+                val: "%",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＆"))).toEqual([
+            {
+                pos: 0,
+                val: "&",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＇"))).toEqual([
+            {
+                pos: 0,
+                val: "'",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("（"))).toEqual([
+            {
+                pos: 0,
+                val: "(",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("）"))).toEqual([
+            {
+                pos: 0,
+                val: ")",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＊"))).toEqual([
+            {
+                pos: 0,
+                val: "*",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＋"))).toEqual([
+            {
+                pos: 0,
+                val: "+",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("，"))).toEqual([
+            {
+                pos: 0,
+                val: ",",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("－"))).toEqual([
+            {
+                pos: 0,
+                val: "-",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("．"))).toEqual([
+            {
+                pos: 0,
+                val: ".",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("／"))).toEqual([
+            {
+                pos: 0,
+                val: "/",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("："))).toEqual([
+            {
+                pos: 0,
+                val: ":",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("；"))).toEqual([
+            {
+                pos: 0,
+                val: ";",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＜"))).toEqual([
+            {
+                pos: 0,
+                val: "<",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＝"))).toEqual([
+            {
+                pos: 0,
+                val: "=",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＞"))).toEqual([
+            {
+                pos: 0,
+                val: ">",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("？"))).toEqual([
+            {
+                pos: 0,
+                val: "?",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＠"))).toEqual([
+            {
+                pos: 0,
+                val: "@",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("［"))).toEqual([
+            {
+                pos: 0,
+                val: "[",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＼"))).toEqual([
+            {
+                pos: 0,
+                val: "\\",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("］"))).toEqual([
+            {
+                pos: 0,
+                val: "]",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＾"))).toEqual([
+            {
+                pos: 0,
+                val: "^",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("＿"))).toEqual([
+            {
+                pos: 0,
+                val: "_",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("｀"))).toEqual([
+            {
+                pos: 0,
+                val: "`",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("｛"))).toEqual([
+            {
+                pos: 0,
+                val: "{",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("｜"))).toEqual([
+            {
+                pos: 0,
+                val: "|",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("｝"))).toEqual([
+            {
+                pos: 0,
+                val: "}",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("～"))).toEqual([
+            {
+                pos: 0,
+                val: "~",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("、"))).toEqual([
+            {
+                pos: 0,
+                val: ",",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("。"))).toEqual([
+            {
+                pos: 0,
+                val: ".",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("「"))).toEqual([
+            {
+                pos: 0,
+                val: "\"",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("」"))).toEqual([
+            {
+                pos: 0,
+                val: "\"",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("　"))).toEqual([
+            {
+                pos: 0,
+                val: " ",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("!"))).toEqual([
+            {
+                pos: 0,
+                val: "!",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("\""))).toEqual([
+            {
+                pos: 0,
+                val: "\"",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("#"))).toEqual([
+            {
+                pos: 0,
+                val: "#",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("$"))).toEqual([
+            {
+                pos: 0,
+                val: "$",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("%"))).toEqual([
+            {
+                pos: 0,
+                val: "%",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("&"))).toEqual([
+            {
+                pos: 0,
+                val: "&",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("'"))).toEqual([
+            {
+                pos: 0,
+                val: "'",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("("))).toEqual([
+            {
+                pos: 0,
+                val: "(",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build(")"))).toEqual([
+            {
+                pos: 0,
+                val: ")",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("*"))).toEqual([
+            {
+                pos: 0,
+                val: "*",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("+"))).toEqual([
+            {
+                pos: 0,
+                val: "+",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build(","))).toEqual([
+            {
+                pos: 0,
+                val: ",",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("-"))).toEqual([
+            {
+                pos: 0,
+                val: "-",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("."))).toEqual([
+            {
+                pos: 0,
+                val: ".",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("/"))).toEqual([
+            {
+                pos: 0,
+                val: "/",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build(":"))).toEqual([
+            {
+                pos: 0,
+                val: ":",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build(";"))).toEqual([
+            {
+                pos: 0,
+                val: ";",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("<"))).toEqual([
+            {
+                pos: 0,
+                val: "<",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("="))).toEqual([
+            {
+                pos: 0,
+                val: "=",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build(">"))).toEqual([
+            {
+                pos: 0,
+                val: ">",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("?"))).toEqual([
+            {
+                pos: 0,
+                val: "?",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("@"))).toEqual([
+            {
+                pos: 0,
+                val: "@",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("["))).toEqual([
+            {
+                pos: 0,
+                val: "[",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("\\"))).toEqual([
+            {
+                pos: 0,
+                val: "\\",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("]"))).toEqual([
+            {
+                pos: 0,
+                val: "]",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("^"))).toEqual([
+            {
+                pos: 0,
+                val: "^",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("_"))).toEqual([
+            {
+                pos: 0,
+                val: "_",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("`"))).toEqual([
+            {
+                pos: 0,
+                val: "`",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("{"))).toEqual([
+            {
+                pos: 0,
+                val: "{",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("|"))).toEqual([
+            {
+                pos: 0,
+                val: "|",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("}"))).toEqual([
+            {
+                pos: 0,
+                val: "}",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("~"))).toEqual([
+            {
+                pos: 0,
+                val: "~",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build(" "))).toEqual([
+            {
+                pos: 0,
+                val: " ",
+                children: []
+            }
+        ]);
+    });
+
+    test("roman", () => {
+        expect(mnb.build(mrb.build("ａ"))).toEqual([
+            {
+                pos: 0,
+                val: "a",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｂ"))).toEqual([
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｃ"))).toEqual([
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｄ"))).toEqual([
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｅ"))).toEqual([
+            {
+                pos: 0,
+                val: "e",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｆ"))).toEqual([
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｇ"))).toEqual([
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｈ"))).toEqual([
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｉ"))).toEqual([
+            {
+                pos: 0,
+                val: "i",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｊ"))).toEqual([
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｋ"))).toEqual([
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｌ"))).toEqual([
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｍ"))).toEqual([
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｎ"))).toEqual([
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｏ"))).toEqual([
+            {
+                pos: 0,
+                val: "o",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｐ"))).toEqual([
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｑ"))).toEqual([
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｒ"))).toEqual([
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｓ"))).toEqual([
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｔ"))).toEqual([
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｕ"))).toEqual([
+            {
+                pos: 0,
+                val: "u",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｖ"))).toEqual([
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｗ"))).toEqual([
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｘ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｙ"))).toEqual([
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("ｚ"))).toEqual([
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ａ"))).toEqual([
+            {
+                pos: 0,
+                val: "A",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｂ"))).toEqual([
+            {
+                pos: 0,
+                val: "B",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｃ"))).toEqual([
+            {
+                pos: 0,
+                val: "C",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｄ"))).toEqual([
+            {
+                pos: 0,
+                val: "D",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｅ"))).toEqual([
+            {
+                pos: 0,
+                val: "E",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｆ"))).toEqual([
+            {
+                pos: 0,
+                val: "F",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｇ"))).toEqual([
+            {
+                pos: 0,
+                val: "G",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｈ"))).toEqual([
+            {
+                pos: 0,
+                val: "H",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｉ"))).toEqual([
+            {
+                pos: 0,
+                val: "I",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｊ"))).toEqual([
+            {
+                pos: 0,
+                val: "J",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｋ"))).toEqual([
+            {
+                pos: 0,
+                val: "K",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｌ"))).toEqual([
+            {
+                pos: 0,
+                val: "L",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｍ"))).toEqual([
+            {
+                pos: 0,
+                val: "M",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｎ"))).toEqual([
+            {
+                pos: 0,
+                val: "N",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｏ"))).toEqual([
+            {
+                pos: 0,
+                val: "O",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｐ"))).toEqual([
+            {
+                pos: 0,
+                val: "P",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｑ"))).toEqual([
+            {
+                pos: 0,
+                val: "Q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｒ"))).toEqual([
+            {
+                pos: 0,
+                val: "R",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｓ"))).toEqual([
+            {
+                pos: 0,
+                val: "S",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｔ"))).toEqual([
+            {
+                pos: 0,
+                val: "T",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｕ"))).toEqual([
+            {
+                pos: 0,
+                val: "U",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｖ"))).toEqual([
+            {
+                pos: 0,
+                val: "V",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｗ"))).toEqual([
+            {
+                pos: 0,
+                val: "W",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｘ"))).toEqual([
+            {
+                pos: 0,
+                val: "X",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｙ"))).toEqual([
+            {
+                pos: 0,
+                val: "Y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Ｚ"))).toEqual([
+            {
+                pos: 0,
+                val: "Z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("a"))).toEqual([
+            {
+                pos: 0,
+                val: "a",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("b"))).toEqual([
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("c"))).toEqual([
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("d"))).toEqual([
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("e"))).toEqual([
+            {
+                pos: 0,
+                val: "e",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("f"))).toEqual([
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("g"))).toEqual([
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("h"))).toEqual([
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("i"))).toEqual([
+            {
+                pos: 0,
+                val: "i",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("j"))).toEqual([
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("k"))).toEqual([
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("l"))).toEqual([
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("m"))).toEqual([
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("n"))).toEqual([
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("o"))).toEqual([
+            {
+                pos: 0,
+                val: "o",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("p"))).toEqual([
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("q"))).toEqual([
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("r"))).toEqual([
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("s"))).toEqual([
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("t"))).toEqual([
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("u"))).toEqual([
+            {
+                pos: 0,
+                val: "u",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("v"))).toEqual([
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("w"))).toEqual([
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("x"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("y"))).toEqual([
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("z"))).toEqual([
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("A"))).toEqual([
+            {
+                pos: 0,
+                val: "A",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("B"))).toEqual([
+            {
+                pos: 0,
+                val: "B",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("C"))).toEqual([
+            {
+                pos: 0,
+                val: "C",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("D"))).toEqual([
+            {
+                pos: 0,
+                val: "D",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("E"))).toEqual([
+            {
+                pos: 0,
+                val: "E",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("F"))).toEqual([
+            {
+                pos: 0,
+                val: "F",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("G"))).toEqual([
+            {
+                pos: 0,
+                val: "G",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("H"))).toEqual([
+            {
+                pos: 0,
+                val: "H",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("I"))).toEqual([
+            {
+                pos: 0,
+                val: "I",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("J"))).toEqual([
+            {
+                pos: 0,
+                val: "J",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("K"))).toEqual([
+            {
+                pos: 0,
+                val: "K",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("L"))).toEqual([
+            {
+                pos: 0,
+                val: "L",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("M"))).toEqual([
+            {
+                pos: 0,
+                val: "M",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("N"))).toEqual([
+            {
+                pos: 0,
+                val: "N",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("O"))).toEqual([
+            {
+                pos: 0,
+                val: "O",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("P"))).toEqual([
+            {
+                pos: 0,
+                val: "P",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Q"))).toEqual([
+            {
+                pos: 0,
+                val: "Q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("R"))).toEqual([
+            {
+                pos: 0,
+                val: "R",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("S"))).toEqual([
+            {
+                pos: 0,
+                val: "S",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("T"))).toEqual([
+            {
+                pos: 0,
+                val: "T",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("U"))).toEqual([
+            {
+                pos: 0,
+                val: "U",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("V"))).toEqual([
+            {
+                pos: 0,
+                val: "V",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("W"))).toEqual([
+            {
+                pos: 0,
+                val: "W",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("X"))).toEqual([
+            {
+                pos: 0,
+                val: "X",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Y"))).toEqual([
+            {
+                pos: 0,
+                val: "Y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("Z"))).toEqual([
+            {
+                pos: 0,
+                val: "Z",
+                children: []
+            }
+        ]);        
+    });
+});

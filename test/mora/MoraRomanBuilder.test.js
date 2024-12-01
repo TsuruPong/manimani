@@ -735,6 +735,6 @@ describe("Roman Builder Test", () => {
         expect(builder.build("W")).toEqual(["W"]);
         expect(builder.build("X")).toEqual(["X"]);
         expect(builder.build("Y")).toEqual(["Y"]);
-        expect(builder.build("Z")).toEqual(["Z"]);  
+        expect(builder.build("Z")).toEqual(["Z"]);
     });
 })
