@@ -15,7 +15,7 @@ function Kuromoji() {
  * @returns {string} tokenized
  */
 Kuromoji.prototype.tokenize = function(sentence, callback) {
-    kuromoji.builder({ dicPath: "node_modules/kuromoji/dict/" }).build((err, tokenizer) => {
+    kuromoji.builder({ dicPath: "src/dict/" }).build((err, tokenizer) => {
         if (err) {
             console.error(err);
             return;
