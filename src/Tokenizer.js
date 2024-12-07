@@ -12,11 +12,12 @@ function Tokenizer() {
 
 /**
  * Tokenizes a given Japanese sentence and converts it into moras.
+ * @param {string} dic
  * @param {string} sentence 
  * @param {Function} callback 
  */
-Tokenizer.prototype.tokenize = function(sentence, callback) {
-    new Kuromoji().tokenize(sentence, function(tokens) {
+Tokenizer.prototype.tokenize = function(dic, sentence, callback) {
+    new Kuromoji().tokenize(dic, sentence, function(tokens) {
         const katakana = tokens.map(token => token.reading || token.surface_form).join("");
         const hiragana = katakana.replace(/[\u30a1-\u30f6]/g, function(match) {
             var chr = match.charCodeAt(0) - 0x60;

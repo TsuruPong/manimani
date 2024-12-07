@@ -53,6 +53,6 @@ describe("Tokenizer Test", () => {
                 },
             ]);
         }
-        tokenizer.tokenize("柿", callback);
+        tokenizer.tokenize("/src/dic", "柿", callback);
     });
 });
