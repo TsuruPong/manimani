@@ -11,7 +11,7 @@ npm i manimani
 ```
 var manimani = require("../src/manimani");
 
-manimani.tokenize("柿の種", function(moras) {
+manimani.tokenize("path/to/dictionary/dir/", "柿の種", function(moras) {
     console.log(JSON.stringify(moras, null, 2))
 });
 ```
