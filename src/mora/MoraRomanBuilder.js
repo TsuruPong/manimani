@@ -57,7 +57,6 @@ MoraRomanBuilder.prototype.build = function (current, next) {
 
 /**
  * Concatenates boin and shiins to generate Romanized representations.
- * @param {string[]} 
  * @param {string} kana
  * @param {string} boin 
  * @param {string[]} shiins 
