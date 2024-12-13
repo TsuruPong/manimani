@@ -44,6 +44,7 @@ MoraRomanBuilder.prototype.build = function (current, next) {
                 var shiins = nextKana.origin ? nextKana.origin.shiins : nextKana.shiins;
                 var sliced = shiins.map(s => s.slice(0, 1));
                 for (const s of sliced) {
+                    if (next == "ん" && s == "n") continue;
                     if (!romans.includes(s)) {
                         romans.push(s);
                     }

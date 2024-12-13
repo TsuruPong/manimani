@@ -20,7 +20,7 @@ MoraNodeBuilder.prototype.build = function (romans) {
         const chars = [...r];
         let prev;
         for (const c of chars) {
-            if (chars.length == 1 && c == "n") {
+            if (chars.length === 1 && ["n", "x", "l"].includes(c)) {
                 const n = new MoraNode(num, c);
                 nodes.push(n);
                 continue;

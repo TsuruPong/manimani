@@ -399,7 +399,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build("っ", "ろ")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "r"]);
         expect(builder.build("っ", "わ")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "w"]);
         expect(builder.build("っ", "を")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "w"]);
-        expect(builder.build("っ", "ん")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "n", "x"]);
+        expect(builder.build("っ", "ん")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "x"]);
         expect(builder.build("っ", "が")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "g"]);
         expect(builder.build("っ", "ぎ")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "g"]);
         expect(builder.build("っ", "ぐ")).toEqual(["xtu", "ltu", "xtsu", "ltsu", "g"]);

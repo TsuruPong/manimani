@@ -12648,6 +12648,11140 @@ describe("Node Builder Test", () => {
         ]);
     });
 
+    test("xtu after", () => {
+        expect(mnb.build(mrb.build("っ", "あ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        
+        expect(mnb.build(mrb.build("っ", "い"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        
+        expect(mnb.build(mrb.build("っ", "う"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "え"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "お"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "か"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "き"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "く"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "け"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "こ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "さ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "し"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "す"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "せ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "そ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "た"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ち"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "つ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "て"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "と"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "な"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "に"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぬ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ね"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "の"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "は"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ひ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "へ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ほ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ま"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "み"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "む"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "め"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "も"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "や"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ゆ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "よ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ら"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "り"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "る"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "れ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ろ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "わ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "を"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ん"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "が"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぎ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぐ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "げ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ご"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ざ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "じ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ず"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぜ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぞ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "だ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぢ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "づ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "で"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ど"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ば"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "び"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぶ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "べ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぼ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぱ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぴ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぷ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぺ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぽ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "いぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "y",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "うぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "うぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "w",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "きゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "きぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "きゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "きぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "きょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぎゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぎぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぎゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぎぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぎょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "g",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "くぁ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "くぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "くぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "くぉ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "k",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "q",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "しゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "しぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "しゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "しぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "しょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "s",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "じゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "じぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "じゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "じぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "じょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "z",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "j",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ちゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ちぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ちゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ちぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ちょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "c",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぢぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぢゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぢぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぢょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "つぁ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "つぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "つぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "つぉ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "てゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "てぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "てゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "てぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "てょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "t",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "でゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "でぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "でゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "でぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "でょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "d",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "にゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "にぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "にゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "にぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "にょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "n",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ひゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ひぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ひゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ひぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ひょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "びゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "びぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "びゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "びぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "びょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "b",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぴゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぴぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぴゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぴぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぴょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "p",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふぁ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふぉ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ふょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "h",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "f",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "みゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "みぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "みゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "みぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "みょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "m",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "りゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "りぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "りゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "りぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "りょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "r",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ヴぁ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ヴぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ヴ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ヴぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ヴぉ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "v",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぁ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぇ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ぉ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ゃ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ゅ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ょ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "っ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+        expect(mnb.build(mrb.build("っ", "ゎ"))).toEqual([
+            {
+                pos: 0,
+                val: "x",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: [
+                    {
+                        pos: 1,
+                        val: "t",
+                        children: [
+                            {
+                                pos: 2,
+                                val: "u",
+                                children: []
+                            },
+                            {
+                                pos: 2,
+                                val: "s",
+                                children: [
+                                    {
+                                        pos: 3,
+                                        val: "u",
+                                        children: []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                pos: 0,
+                val: "x",
+                children: []
+            },
+            {
+                pos: 0,
+                val: "l",
+                children: []
+            }
+        ]);
+    });
+
     test("number", () => {
         expect(mnb.build(mrb.build("１"))).toEqual([
             {
