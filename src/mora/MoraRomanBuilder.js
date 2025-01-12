@@ -86,6 +86,7 @@ function toLowerCase(symbol) {
     if (symbol == "。") return ".";
     if (symbol == "「") return "\"";
     if (symbol == "」") return "\"";
+    if (symbol == "ー") return "-";
     return symbol.replace(/[\u3000-\uFF5E]/g, (s) => {
         var code  = s.charCodeAt(0);
         return code >= 0xFF01 && code <= 0xFF5E

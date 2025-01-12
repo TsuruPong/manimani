@@ -572,6 +572,7 @@ describe("Roman Builder Test", () => {
         expect(builder.build("＋")).toEqual(["+"]);
         expect(builder.build("，")).toEqual([","]);
         expect(builder.build("－")).toEqual(["-"]);
+        expect(builder.build("ー")).toEqual(["-"]);
         expect(builder.build("．")).toEqual(["."]);
         expect(builder.build("／")).toEqual(["/"]);
         expect(builder.build("：")).toEqual([":"]);
